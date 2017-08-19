@@ -10,11 +10,10 @@
   <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
-  <!-- <h1>MY foods!</h1> -->
   <div w3-include-html="nav-bar.html"></div>
   <div class="all-foods-content">
     <div>
-      <h2>Foods</h2>
+      <h2 class="food-heading">All Foods</h2>
       <table class="foods-list">
         <tr>
           <th>Name</th>
@@ -24,15 +23,19 @@
     </div>
 
     <div class="add-food">
-      <h2>Add a New Food</h2>
+      <h2 class="food-heading">Add a New Food</h2>
       <form>
-        <label class="name-label" >Food Name:
-          <input class="name-input">
-        </label>
-        <label class="calorie-label">Calorie Count:
-          <input class="calorie-input">
-        </label>
-        <input type="submit" class="add-food-btn" value="Add Food">
+        <div class="form-food-name">
+          <label class="name-label" >Food Name:
+            <input class="name-input">
+          </label>
+        </div>
+        <div class="form-food-calorie">
+          <label class="calorie-label">Calorie Count:
+            <input class="calorie-input">
+          </label>
+        </div>
+        <input type="submit" class="add-food-btn btn" value="Add Food">
       </form>
     </div>
   </div>

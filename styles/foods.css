@@ -2,3 +2,17 @@
   display: flex;
   justify-content: space-around;
 }
+
+.food-heading {
+  text-align: center;
+  border-bottom: solid black 2px;
+}
+
+.form-food-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  line-height: 160%;
+}
