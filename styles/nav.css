@@ -1,0 +1,16 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+.nav-bar, a {
+  color: white;
+  text-decoration: none;
+}
+/*
+.nav-bar, a:hover {
+  background: darkgray;
+}*/
