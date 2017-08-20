@@ -52,4 +52,15 @@ describe("foods.html", function() {
   //   driver.wait(until.elementLocated({css: '.name-error-message'}),
   //   expect(document.querySelector('.food-data-name')).to.have.text('Please enter a food name')
   // })
+
+  test.it("can delete a food", function() {
+    driver.get(`${frontEndLocation}`)
+    driver.wait(until.elementLocated({css: ".delete-icon"}))
+    driver.findElement({css: '.delete-icon'}).click()
+    driver.sleep(1000)
+    driver.findElements({css: ".foods-list .food"})
+    .then(function(foods) {
+      assert.lengthOf(foods, 45)
+    })
+  })
 })
