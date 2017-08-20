@@ -3,6 +3,10 @@
   justify-content: space-around;
 }
 
+.food-data-id {
+  display: none;
+}
+
 .food-heading {
   text-align: center;
   border-bottom: solid black 2px;
@@ -12,9 +16,9 @@
   text-align: left;
 }
 
-.food-data-name {
+/* .food-data-name {
 
-}
+} */
 
 .food-data-calorie {
   padding: 0 2px;
