@@ -1,0 +1,35 @@
+.all-foods-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.food-heading {
+  text-align: center;
+  border-bottom: solid black 2px;
+}
+
+.foods-list-table-heading {
+  text-align: left;
+}
+
+.food-data-name {
+
+}
+
+.food-data-calorie {
+  padding: 0 2px;
+  text-align: end;
+}
+
+.food-data-delete {
+  padding: 0 15px;
+}
+
+.form-food-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  line-height: 160%;
+}

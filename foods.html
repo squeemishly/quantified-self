@@ -3,32 +3,44 @@
 <head>
   <meta charset="utf-8">
   <title>Quantified Self - Manage Foods</title>
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
   <link rel="stylesheet" type="text/css" href="styles/buttons-and-links.css">
+  <link rel="stylesheet" type="text/css" href="styles/foods.css">
+  <link rel="stylesheet" type="text/css" href="styles/nav.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
-  <h1>MY foods!</h1>
-  <div>
-    <h2>Foods</h2>
-    <table class="foods-list">
-      <tr>
-        <th>Name</th>
-        <th>Calories</th>
-      </tr>
-    </table>
+  <div w3-include-html="nav-bar.html"></div>
+  <div class="all-foods-content">
+    <div>
+      <h2 class="food-heading">All Foods</h2>
+      <table class="foods-list">
+        <tr>
+          <th class="foods-list-table-heading">Name</th>
+          <th class="foods-list-table-heading">Calories</th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="add-food">
+      <h2 class="food-heading">Add a New Food</h2>
+      <form>
+        <div class="form-food-name">
+          <label class="name-label" >Food Name:
+            <input class="name-input">
+          </label>
+        </div>
+        <div class="form-food-calorie">
+          <label class="calorie-label">Calorie Count:
+            <input class="calorie-input">
+          </label>
+        </div>
+        <input type="submit" class="add-food-btn btn" value="Add Food">
+      </form>
+    </div>
   </div>
 
-  <div class="add-food">
-    <h2>Add a new food</h2>
-    <form>
-      <label class="name-label" >Food Name:
-        <input class="name-input">
-      </label>
-      <label class="calorie-label">Calorie Count:
-          <input class="calorie-input">
-      </label>
-      <input type="submit" class="add-food-btn" value="Add Food">
-    </form>
-  </div>
   <script src="main.bundle.js"></script>
+  <script>w3.includeHTML();</script>
 </body>
 </html>
