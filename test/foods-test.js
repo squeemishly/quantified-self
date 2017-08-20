@@ -23,7 +23,7 @@ describe("foods.html", function() {
     driver.wait(until.elementLocated({css: ".foods-list .food"}));
     driver.findElements({css: ".foods-list .food"})
     .then(function(foods) {
-      assert.lengthOf(foods, 24)
+      assert.lengthOf(foods, 45)
     })
   })
 
@@ -36,7 +36,7 @@ describe("foods.html", function() {
     driver.sleep(1000)
     driver.findElements({css: ".foods-list .food"})
     .then(function(foods) {
-      assert.lengthOf(foods, 25)
+      assert.lengthOf(foods, 46)
     })
   })
 
