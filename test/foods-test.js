@@ -26,7 +26,7 @@ describe("foods.html", function() {
     driver.wait(until.elementLocated({css: ".foods-list .food"}));
     driver.findElements({css: ".foods-list .food"})
     .then(function(foods) {
-      assert.lengthOf(foods, 45)
+      assert.lengthOf(foods, 12)
     })
   })
 
@@ -39,7 +39,7 @@ describe("foods.html", function() {
     driver.sleep(1000)
     driver.findElements({css: ".foods-list .food"})
     .then(function(foods) {
-      assert.lengthOf(foods, 46)
+      assert.lengthOf(foods, 13)
     })
   })
 
@@ -52,4 +52,15 @@ describe("foods.html", function() {
   //   driver.wait(until.elementLocated({css: '.name-error-message'}),
   //   expect(document.querySelector('.food-data-name')).to.have.text('Please enter a food name')
   // })
+
+  test.it("can delete a food", function() {
+    driver.get(`${frontEndLocation}`)
+    driver.wait(until.elementLocated({css: ".food-delete"}))
+    driver.findElement({css: '.food-delete'}).click()
+    driver.sleep(1000)
+    driver.findElements({css: ".foods-list .food"})
+    .then(function(foods) {
+      assert.lengthOf(foods, 12)
+    })
+  })
 })

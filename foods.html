@@ -12,14 +12,15 @@
 <body>
   <div w3-include-html="nav-bar.html"></div>
   <div class="all-foods-content">
-    <div>
+    <div class="food-container">
       <h2 class="food-heading">All Foods</h2>
-      <table class="foods-list">
-        <tr>
-          <th class="foods-list-table-heading">Name</th>
-          <th class="foods-list-table-heading">Calories</th>
-        </tr>
-      </table>
+      <div class="grid-container foods-list">
+        <div class="headers-row">
+          <div class="grid-item foods-list-table-heading food-data-name">Name</div>
+          <div class="grid-item foods-list-table-heading food-data-calorie">Calories</div>
+          <div class="grid-item foods-list-table-heading"></div>
+        </div>
+      </div>
     </div>
 
     <div class="add-food">
