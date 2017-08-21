@@ -70,7 +70,7 @@ describe("foods.html", function() {
     driver.wait(until.elementLocated({css: ".food-data-name"}))
     driver.findElement({css: '.food-data-name'}).click()
     driver.sleep(5000)
-    driver.findElement({css: '.name-edit'}).sendKeys('A new name')
+    driver.findElement({css: '.field-edit'}).sendKeys('A new name')
     driver.findElement({css: '.food-heading'}).click()
     driver.sleep(1000)
     //   expect(document.querySelector('.food-data-name')).to.have.text('A new name')
