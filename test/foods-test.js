@@ -49,8 +49,9 @@ describe("foods.html", function() {
   //   driver.findElement({css: '.name-input'}).sendKeys('')
   //   driver.findElement({css: '.calorie-input'}).sendKeys('200')
   //   driver.findElement({css: '.add-food-btn'}).click()
+    // driver.sleep(1000)
   //   driver.wait(until.elementLocated({css: '.name-error-message'}),
-  //   expect(document.querySelector('.food-data-name')).to.have.text('Please enter a food name')
+  //   expect(document.querySelector('.name-error-message')).to.have.text('Please enter a food name')
   // })
 
   test.it("can delete a food", function() {
@@ -61,6 +62,22 @@ describe("foods.html", function() {
     driver.findElements({css: ".foods-list .food"})
     .then(function(foods) {
       assert.lengthOf(foods, 12)
+    })
+  })
+
+  test.it("can edit a food name", function() {
+    driver.get(`${frontEndLocation}`)
+    driver.wait(until.elementLocated({css: ".food-data-name"}))
+    driver.findElement({css: '.food-data-name'}).click()
+    driver.sleep(5000)
+    driver.findElement({css: '.field-edit'}).sendKeys('A new name')
+    driver.findElement({css: '.food-heading'}).click()
+    driver.sleep(1000)
+    //   expect(document.querySelector('.food-data-name')).to.have.text('A new name')
+    driver.findElements({css: ".foods-list .food"})
+    .then(function(foods) {
+      assert.lengthOf(foods, 12)
+      assert.include(foods, 'A new name', 'There is a new name')
     })
   })
 })
