@@ -63,4 +63,20 @@ describe("foods.html", function() {
       assert.lengthOf(foods, 12)
     })
   })
+
+  test.it("can edit a food name", function() {
+    driver.get(`${frontEndLocation}`)
+    driver.wait(until.elementLocated({css: ".food-data-name"}))
+    driver.findElement({css: '.food-data-name'}).click()
+    driver.sleep(5000)
+    driver.findElement({css: '.name-edit'}).sendKeys('A new name')
+    driver.findElement({css: '.food-heading'}).click()
+    driver.sleep(1000)
+    //   expect(document.querySelector('.food-data-name')).to.have.text('A new name')
+    driver.findElements({css: ".foods-list .food"})
+    .then(function(foods) {
+      assert.lengthOf(foods, 12)
+      assert.include(foods, 'A new name', 'There is a new name')
+    })
+  })
 })
