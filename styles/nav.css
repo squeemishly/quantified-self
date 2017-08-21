@@ -1,0 +1,33 @@
+.nav-bar {
+  background: black;
+  color: white;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-bar ul li {
+    float: left;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+    background-color: darkgray;
+}
+
+.site-title{
+  padding: 10px 15px;
+  font-size: 20px;
+}
