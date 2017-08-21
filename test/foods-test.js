@@ -49,8 +49,9 @@ describe("foods.html", function() {
   //   driver.findElement({css: '.name-input'}).sendKeys('')
   //   driver.findElement({css: '.calorie-input'}).sendKeys('200')
   //   driver.findElement({css: '.add-food-btn'}).click()
+    // driver.sleep(1000)
   //   driver.wait(until.elementLocated({css: '.name-error-message'}),
-  //   expect(document.querySelector('.food-data-name')).to.have.text('Please enter a food name')
+  //   expect(document.querySelector('.name-error-message')).to.have.text('Please enter a food name')
   // })
 
   test.it("can delete a food", function() {
