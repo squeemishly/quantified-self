@@ -43,16 +43,19 @@ describe("foods.html", function() {
     })
   })
 
-  // test.it("gives an error message when there's no info in the food field", function() {
-  //   driver.get(`${frontEndLocation}`)
-  //   driver.wait(until.elementLocated({css: ".add-food-btn"}))
-  //   driver.findElement({css: '.name-input'}).sendKeys('')
-  //   driver.findElement({css: '.calorie-input'}).sendKeys('200')
-  //   driver.findElement({css: '.add-food-btn'}).click()
-    // driver.sleep(1000)
-  //   driver.wait(until.elementLocated({css: '.name-error-message'}),
-  //   expect(document.querySelector('.name-error-message')).to.have.text('Please enter a food name')
-  // })
+  test.it("gives an error message when there's no info in the food field", function() {
+    driver.get(`${frontEndLocation}`)
+    driver.wait(until.elementLocated({css: ".add-food-btn"}))
+    driver.findElement({css: '.name-input'}).sendKeys('')
+    driver.findElement({css: '.calorie-input'}).sendKeys('200')
+    driver.findElement({css: '.add-food-btn'}).click()
+    driver.sleep(1000)
+    driver.wait(until.elementLocated({css: '.name-error-message'}))
+    .then(function(msg) {
+      expect(msg).to.have.text('Please enter a food name')
+    })
+    // expect(document.querySelector('.name-error-message')).to.have.text('Please enter a food name')
+  })
 
   test.it("can delete a food", function() {
     driver.get(`${frontEndLocation}`)
