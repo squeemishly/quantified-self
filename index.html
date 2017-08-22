@@ -12,6 +12,23 @@
 </head>
 <body>
   <div w3-include-html="nav-bar.html"></div>
+  <div class="totals">
+    <h2 class="totals-heading">Totals:</h2>
+    <table class="caloric-goals-table">
+      <tr class="caloric-goals-table-headings">
+        <th>Caloric Goals:</th>
+        <th>2000</th>
+      </tr>
+      <tr>
+        <td>Calories Consumed: </td>
+        <td class="consumed-cal-value"></td>
+      </tr>
+      <tr>
+        <td>Remaining Calories: </td>
+        <td class="remaining-cal-value"></td>
+      </tr>
+    </table>
+  </div>
   <h1>Foods</h1>
   <form action="/foods.html">
     <input type="submit" value="Create New" class="btn create-new-food">
@@ -41,6 +58,8 @@
       <th></th>
     </tr>
   </table>
+  <div class="Breakfast-total-calories total-calories"></div>
+  <div class="Breakfast-remaining-calories remaining-calories"></div>
   <h1>Lunch</h1>
   <table class="Lunch-table meal-table">
     <tr>
@@ -49,6 +68,8 @@
       <th></th>
     </tr>
   </table>
+  <div class="Lunch-total-calories total-calories"></div>
+  <div class="Lunch-remaining-calories remaining-calories"></div>
   <h1>Dinner</h1>
   <table class="Dinner-table meal-table">
     <tr>
@@ -57,6 +78,8 @@
       <th></th>
     </tr>
   </table>
+  <div class="Dinner-total-calories total-calories"></div>
+  <div class="Dinner-remaining-calories remaining-calories"></div>
   <h1>Snack</h1>
   <table class="Snack-table meal-table">
     <tr>
@@ -65,6 +88,8 @@
       <th></th>
     </tr>
   </table>
+  <div class="Snack-total-calories total-calories"></div>
+  <div class="Snack-remaining-calories remaining-calories"></div>
   <script src="main.bundle.js"></script>
   <script>w3.includeHTML();</script>
 </body>
