@@ -46,12 +46,12 @@
     </form>
   </div>
   <h3>Add Selected To:</h3>
-  <button type="submit" class="btn meal-submit btn-breakfast">Breakfast</button>
-  <button type="submit" class="btn meal-submit btn-lunch">Lunch</button>
-  <button type="submit" class="btn meal-submit btn-dinner">Dinner</button>
-  <button type="submit" class="btn meal-submit btn-snack">Snack</button>
+  <button type="submit" class="btn meal-submit btn-breakfast" value="1">Breakfast</button>
+  <button type="submit" class="btn meal-submit btn-lunch" value="3">Lunch</button>
+  <button type="submit" class="btn meal-submit btn-dinner" value="4">Dinner</button>
+  <button type="submit" class="btn meal-submit btn-snack" value="2">Snack</button>
   <h1>Breakfast</h1>
-  <table class="Breakfast-table meal-table">
+  <table class="Breakfast-table meal-table" id="1">
     <tr>
       <th>Name</th>
       <th>Calorie</th>
@@ -61,7 +61,7 @@
   <div class="Breakfast-total-calories total-calories"></div>
   <div class="Breakfast-remaining-calories remaining-calories"></div>
   <h1>Lunch</h1>
-  <table class="Lunch-table meal-table">
+  <table class="Lunch-table meal-table" id="3">
     <tr>
       <th>Name</th>
       <th>Calorie</th>
@@ -71,17 +71,17 @@
   <div class="Lunch-total-calories total-calories"></div>
   <div class="Lunch-remaining-calories remaining-calories"></div>
   <h1>Dinner</h1>
-  <table class="Dinner-table meal-table">
+  <table class="Dinner-table meal-table" id="4">
     <tr>
       <th>Name</th>
       <th>Calorie</th>
       <th></th>
     </tr>
   </table>
-  <div class="Dinner-total-calories total-calories"></div>
+  <div class="Dinner-total-calories total-calories" value="4"></div>
   <div class="Dinner-remaining-calories remaining-calories"></div>
   <h1>Snack</h1>
-  <table class="Snack-table meal-table">
+  <table class="Snack-table meal-table" id="2">
     <tr>
       <th>Name</th>
       <th>Calorie</th>
