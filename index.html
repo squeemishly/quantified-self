@@ -37,13 +37,26 @@
     <label class="filter-diary">Search by Name:
       <input class="filter-diary-input">
     </label>
-    <form class="grid-container diary-list">
+    <!-- <form class="grid-container diary-list">
       <div class="headers-row">
         <div class="grid-item diary-list-table-heading diary-data-name">Name</div>
         <div class="grid-item diary-list-table-heading diary-data-calorie">Calories</div>
         <div class="grid-item diary-list-table-heading"></div>
       </div>
-    </form>
+    </form> -->
+    <!-- <form> -->
+      <table class="diary-table">
+        <thead>
+          <tr class="headers-row">
+            <th class="diary-list-table-heading"></th>
+            <th class="diary-list-table-heading diary-data-name">Name</th>
+            <th class="diary-list-table-heading diary-data-calorie">Calories</th>
+          </tr>
+        </thead>
+        <tbody class="diary-list">
+        </tbody>
+      </table>
+    <!-- </form> -->
   </div>
   <h3>Add Selected To:</h3>
   <button type="submit" class="btn meal-submit btn-breakfast" value="1">Breakfast</button>
