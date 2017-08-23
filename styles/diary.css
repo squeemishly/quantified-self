@@ -70,3 +70,11 @@
 form {
   line-height: 160%;
 }
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
