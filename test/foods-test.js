@@ -4,6 +4,7 @@ var webdriver = require('selenium-webdriver');
 var until     = webdriver.until;
 var test      = require('selenium-webdriver/testing');
 var frontEndLocation = "http://localhost:8080/foods.html"
+const Food = require('./food')
 
 describe("foods.html", function() {
   var driver;
@@ -60,5 +61,11 @@ describe("foods.html", function() {
     .then(function(foods) {
       assert.lengthOf(foods, 12)
     })
+  })
+})
+
+describe("Food", function() {
+  it("can get the foods list", function() {
+    const foods = Food.getAllFood()
   })
 })
