@@ -12,97 +12,103 @@
 </head>
 <body>
   <div w3-include-html="nav-bar.html"></div>
-  <div class="totals">
-    <h2 class="totals-heading">Totals:</h2>
-    <table class="caloric-goals-table">
-      <tr class="caloric-goals-table-headings">
-        <th>Caloric Goals:</th>
-        <th>2000</th>
-      </tr>
-      <tr>
-        <td>Calories Consumed: </td>
-        <td class="consumed-cal-value"></td>
-      </tr>
-      <tr>
-        <td class="remaining-cal green">Remaining Calories: </td>
-        <td class="remaining-cal-value remaining-cal green"></td>
-      </tr>
-    </table>
-  </div>
-  <h1>Foods</h1>
-  <form action="/foods.html">
-    <input type="submit" value="Create New" class="btn create-new-food">
-  </form>
-  <div class="diary-container">
-    <label class="filter-diary">Search by Name:
-      <input class="filter-diary-input">
-    </label>
-    <!-- <form class="grid-container diary-list">
-      <div class="headers-row">
-        <div class="grid-item diary-list-table-heading diary-data-name">Name</div>
-        <div class="grid-item diary-list-table-heading diary-data-calorie">Calories</div>
-        <div class="grid-item diary-list-table-heading"></div>
-      </div>
-    </form> -->
-    <!-- <form> -->
-      <table class="diary-table">
-        <thead>
-          <tr class="headers-row">
-            <th class="diary-list-table-heading"></th>
-            <th class="diary-list-table-heading diary-data-name">Name</th>
-            <th class="diary-list-table-heading diary-data-calorie">Calories</th>
+  <div class="diary">
+    <div class="summaries">
+      <div class="totals">
+        <h1  class="totals-heading">Totals:</h1>
+        <table class="caloric-goals-table">
+          <tr class="caloric-goals-table-headings">
+            <th>Caloric Goals:</th>
+            <th>2000</th>
           </tr>
-        </thead>
-        <tbody class="diary-list">
-        </tbody>
+          <tr>
+            <td>Calories Consumed: </td>
+            <td class="consumed-cal-value"></td>
+          </tr>
+          <tr>
+            <td class="remaining-cal green">Remaining Calories: </td>
+            <td class="remaining-cal-value remaining-cal green"></td>
+          </tr>
+        </table>
+      </div>
+      <h1>Foods</h1>
+      <form action="/foods.html">
+        <input type="submit" value="Create New" class="btn create-new-food">
+      </form>
+      <div class="diary-container">
+        <label class="filter-diary">Search by Name:
+          <input class="filter-diary-input">
+        </label>
+        <!-- <form class="grid-container diary-list">
+          <div class="headers-row">
+            <div class="grid-item diary-list-table-heading diary-data-name">Name</div>
+            <div class="grid-item diary-list-table-heading diary-data-calorie">Calories</div>
+            <div class="grid-item diary-list-table-heading"></div>
+          </div>
+        </form> -->
+        <!-- <form> -->
+          <table class="diary-table">
+            <thead>
+              <tr class="headers-row">
+                <th class="diary-list-table-heading"></th>
+                <th class="diary-list-table-heading diary-data-name">Name</th>
+                <th class="diary-list-table-heading diary-data-calorie">Calories</th>
+              </tr>
+            </thead>
+            <tbody class="diary-list">
+            </tbody>
+          </table>
+        <!-- </form> -->
+      </div>
+      <h3>Add Selected To:</h3>
+      <button type="submit" class="btn meal-submit btn-breakfast" value="1">Breakfast</button>
+      <button type="submit" class="btn meal-submit btn-lunch" value="3">Lunch</button>
+      <button type="submit" class="btn meal-submit btn-dinner" value="4">Dinner</button>
+      <button type="submit" class="btn meal-submit btn-snack" value="2">Snack</button>
+    </div>
+    <div class="meals-tables">
+      <h1>Breakfast</h1>
+      <table class="Breakfast-table meal-table" id="1">
+        <tr>
+          <th>Name</th>
+          <th>Calorie</th>
+          <th></th>
+        </tr>
       </table>
-    <!-- </form> -->
+      <div class="Breakfast-total-calories total-calories"></div>
+      <div class="Breakfast-remaining-calories remaining-calories green"></div>
+      <h1>Lunch</h1>
+      <table class="Lunch-table meal-table" id="3">
+        <tr>
+          <th>Name</th>
+          <th>Calorie</th>
+          <th></th>
+        </tr>
+      </table>
+      <div class="Lunch-total-calories total-calories"></div>
+      <div class="Lunch-remaining-calories remaining-calories green"></div>
+      <h1>Dinner</h1>
+      <table class="Dinner-table meal-table" id="4">
+        <tr>
+          <th>Name</th>
+          <th>Calorie</th>
+          <th></th>
+        </tr>
+      </table>
+      <div class="Dinner-total-calories total-calories"></div>
+      <div class="Dinner-remaining-calories remaining-calories green"></div>
+      <h1>Snack</h1>
+      <table class="Snack-table meal-table" id="2">
+        <tr>
+          <th>Name</th>
+          <th>Calorie</th>
+          <th></th>
+        </tr>
+      </table>
+      <div class="Snack-total-calories total-calories"></div>
+      <div class="Snack-remaining-calories remaining-calories green"></div>
+    </div>
   </div>
-  <h3>Add Selected To:</h3>
-  <button type="submit" class="btn meal-submit btn-breakfast" value="1">Breakfast</button>
-  <button type="submit" class="btn meal-submit btn-lunch" value="3">Lunch</button>
-  <button type="submit" class="btn meal-submit btn-dinner" value="4">Dinner</button>
-  <button type="submit" class="btn meal-submit btn-snack" value="2">Snack</button>
-  <h1>Breakfast</h1>
-  <table class="Breakfast-table meal-table" id="1">
-    <tr>
-      <th>Name</th>
-      <th>Calorie</th>
-      <th></th>
-    </tr>
-  </table>
-  <div class="Breakfast-total-calories total-calories"></div>
-  <div class="Breakfast-remaining-calories remaining-calories green"></div>
-  <h1>Lunch</h1>
-  <table class="Lunch-table meal-table" id="3">
-    <tr>
-      <th>Name</th>
-      <th>Calorie</th>
-      <th></th>
-    </tr>
-  </table>
-  <div class="Lunch-total-calories total-calories"></div>
-  <div class="Lunch-remaining-calories remaining-calories green"></div>
-  <h1>Dinner</h1>
-  <table class="Dinner-table meal-table" id="4">
-    <tr>
-      <th>Name</th>
-      <th>Calorie</th>
-      <th></th>
-    </tr>
-  </table>
-  <div class="Dinner-total-calories total-calories"></div>
-  <div class="Dinner-remaining-calories remaining-calories green"></div>
-  <h1>Snack</h1>
-  <table class="Snack-table meal-table" id="2">
-    <tr>
-      <th>Name</th>
-      <th>Calorie</th>
-      <th></th>
-    </tr>
-  </table>
-  <div class="Snack-total-calories total-calories"></div>
-  <div class="Snack-remaining-calories remaining-calories green"></div>
   <script src="main.bundle.js"></script>
   <script>w3.includeHTML();</script>
 </body>
