@@ -1,6 +1,7 @@
 .nav-bar {
   background: black;
   color: white;
+  margin-bottom: 10px;
 }
 
 .nav-bar ul {

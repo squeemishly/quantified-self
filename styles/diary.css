@@ -102,6 +102,24 @@ form {
   font-weight: bold;
 }
 
+.meal-heading {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.meal-table {
+  border: solid black 2px;
+}
+
+.meal-calorie-count {
+  border-left: solid black 2px;
+  border-right: solid black 2px;
+  border-bottom: solid black 2px;
+  margin-bottom: 10px;
+}
+
 .green {
   color: green;
 }
