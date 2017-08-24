@@ -1,3 +1,8 @@
+.diary {
+  display: flex;
+  justify-content: space-around;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -36,10 +41,6 @@
   justify-content: space-around;
 }
 
-.diary-data-id {
-  display: none;
-}
-
 .diary-heading {
   text-align: center;
   border-bottom: solid black 2px;
@@ -49,13 +50,17 @@
   text-align: left;
 }
 
-/* .diary-data-name {
+.diary-data-id {
+  display: none;
+}
 
-} */
+.diary-data-name {
+  min-width: 175px;
+}
 
 .diary-data-calorie {
-  padding: 0 2px;
-  text-align: end;
+  /*padding: 0 2px;*/
+  text-align: right;
 }
 
 .diary-data-delete {
@@ -69,4 +74,56 @@
 
 form {
   line-height: 160%;
+}
+
+.meal-data-name {
+  min-width: 175px;
+}
+
+.meal-data-calorie {
+  min-width: 50px;
+  text-align: right;
+}
+
+.meal-data-delete {
+  min-width: 25px;
+  text-align: right;
+}
+
+.total-calories {
+  text-align: right;
+  padding-right: 32px;
+  font-weight: bold;
+}
+
+.remaining-calories {
+  text-align: right;
+  padding-right: 32px;
+  font-weight: bold;
+}
+
+.meal-heading {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.meal-table {
+  border: solid black 2px;
+}
+
+.meal-calorie-count {
+  border-left: solid black 2px;
+  border-right: solid black 2px;
+  border-bottom: solid black 2px;
+  margin-bottom: 10px;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
 }
