@@ -15,23 +15,23 @@
   <div class="diary">
     <div class="summaries">
       <div class="totals">
-        <h1  class="totals-heading">Totals:</h1>
+        <h1  class="totals-heading">Totals</h1>
         <table class="caloric-goals-table">
-          <tr class="caloric-goals-table-headings">
-            <th>Caloric Goals:</th>
-            <th>2000</th>
-          </tr>
+          <!-- <tr class="caloric-goals-table-headings">
+            <td>Caloric Goals:</td>
+            <td>2000</td>
+          </tr> -->
           <tr>
-            <td>Calories Consumed: </td>
+            <td class="goal-calories-table">Calories Consumed: </td>
             <td class="consumed-cal-value"></td>
           </tr>
           <tr>
-            <td class="remaining-cal green">Remaining Calories: </td>
+            <td class="goal-calories-table remaining-cal green">Remaining Calories: </td>
             <td class="remaining-cal-value remaining-cal green"></td>
           </tr>
         </table>
       </div>
-      <h1>Foods</h1>
+      <h1 class="foods-heading">Foods</h1>
       <form action="/foods.html">
         <input type="submit" value="Create New" class="btn create-new-food">
       </form>
@@ -39,6 +39,7 @@
         <label class="filter-diary">Search by Name:
           <input class="filter-diary-input">
         </label>
+
         <!-- <form class="grid-container diary-list">
           <div class="headers-row">
             <div class="grid-item diary-list-table-heading diary-data-name">Name</div>
@@ -60,11 +61,13 @@
           </table>
         <!-- </form> -->
       </div>
-      <h3>Add Selected To:</h3>
-      <button type="submit" class="btn meal-submit btn-breakfast" value="1">Breakfast</button>
-      <button type="submit" class="btn meal-submit btn-lunch" value="3">Lunch</button>
-      <button type="submit" class="btn meal-submit btn-dinner" value="4">Dinner</button>
-      <button type="submit" class="btn meal-submit btn-snack" value="2">Snack</button>
+      <h3 class="selection-heading">Add Selected To:</h3>
+      <div class="selection-buttons">
+        <button type="submit" class="btn meal-submit btn-breakfast" value="1">Breakfast</button>
+        <button type="submit" class="btn meal-submit btn-lunch" value="3">Lunch</button>
+        <button type="submit" class="btn meal-submit btn-dinner" value="4">Dinner</button>
+        <button type="submit" class="btn meal-submit btn-snack" value="2">Snack</button>
+      </div>
     </div>
     <div class="meals-tables">
       <h1 class="meal-heading">Breakfast</h1>
