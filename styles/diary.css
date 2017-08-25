@@ -76,7 +76,7 @@ form {
   line-height: 160%;
 }
 
-.meal-data-name {
+.meal-data-name, .goal-calories-table {
   min-width: 175px;
 }
 
@@ -102,11 +102,20 @@ form {
   font-weight: bold;
 }
 
-.meal-heading {
+.meal-heading, .totals-heading, .foods-heading, .selection-heading {
   background-color: black;
   color: white;
   text-align: center;
   margin: 0;
+}
+
+.foods-heading, .selection-heading {
+  margin-top: 10px;
+}
+
+.selection-buttons {
+  padding-top: 5px;
+  text-align: center;
 }
 
 .meal-table {
@@ -118,6 +127,11 @@ form {
   border-right: solid black 2px;
   border-bottom: solid black 2px;
   margin-bottom: 10px;
+}
+
+.filter-diary {
+  padding-bottom: 2px;
+  border-bottom: solid black 2px;
 }
 
 .green {
