@@ -25,5 +25,5 @@ Frontend:
 - JQuery
 
 Backend:
-- Express
-- Node
+Consumes an api built in Express, Node, and Knex.
+Checkout that repository here: https://github.com/nmcolome/qs-js-api
