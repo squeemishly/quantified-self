@@ -6,26 +6,20 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
-  /* min-height: 50vh; */
-  /* min-width: 200px; */
 }
 
 .headers-row {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
 }
 
 .diary-row {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
 }
 
 .grid-item {
   align-items: center;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   width: 50px;
@@ -59,7 +53,6 @@
 }
 
 .diary-data-calorie {
-  /*padding: 0 2px;*/
   text-align: right;
 }
 
@@ -102,11 +95,12 @@ form {
   font-weight: bold;
 }
 
-.meal-heading, .totals-heading, .foods-heading, .selection-heading {
+.heading, .selection-heading {
   background-color: black;
   color: white;
   text-align: center;
   margin: 0;
+  padding: 5px;
 }
 
 .foods-heading, .selection-heading {
