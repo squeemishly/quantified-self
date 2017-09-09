@@ -14,14 +14,15 @@
   margin-bottom: 10px;
 }
 
-.headers-row {
+.food-row, .headers-row {
   display: flex;
   flex-direction: row;
+  padding: 3px;
 }
 
-.food-row {
-  display: flex;
-  flex-direction: row;
+.food-row:nth-of-type(odd){
+  background: lightgray;
+  border-radius: 3px;
 }
 
 .grid-item {

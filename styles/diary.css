@@ -16,6 +16,12 @@
 .diary-row {
   display: flex;
   flex-direction: row;
+  padding: 3px;
+}
+
+.diary-row:nth-of-type(odd){
+  background: lightgray;
+  border-radius: 3px;
 }
 
 .grid-item {
