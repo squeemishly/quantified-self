@@ -18,8 +18,9 @@ Too many foods on the foods list? Click the red x next to any food to delete it 
 
 Return to your calorie counter by clicking on Calorie Counter in the navbar at the top.
 
-## Live version:
-Checkout the live version of the app at: https://squeemishly.github.io/
+## To view this app:
+
+Head on over yonder to https://squeemishly.github.io and click on around. You got the instructions above.
 
 ## What this app uses:
 
